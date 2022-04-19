@@ -1,0 +1,22 @@
+body{
+    background-color:rgb(229, 226, 231);
+    text-align: center;
+}
+.abcd{
+       
+    background-color: white;
+    margin:0% 30% 0% 30%;
+    border-radius: .5em;  
+}
+.j{
+    
+    
+    float: left;
+}
+#a{
+    
+    float: left;
+    margin-top: 7%;
+    font-size: 2em;
+}
+

@@ -1,0 +1,33 @@
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'weatherapp/index.css' %}">
+<h1>Mausam</h1>
+<form method="POST" href="">
+    {% csrf_token %}
+
+    <input type="text" placeholder="city" name="city">
+    <input type="submit" value="Search" name="submit">
+</form>
+<!--<P>{{data}}</P> -->
+<h2> {{i}}</h2>
+<P>{{now}}</P>
+<div class="abcd">
+    <div class="j">
+        <img src="http://openweathermap.org/img/wn/{{j}}@2x.png"></img>
+        
+        <P id="f"> {{f}}</P><hr>
+        <!--weather description-->
+        
+    </div>
+    <P id="a">{{a}} °C</P>
+    <div class="bcd">
+        <p>Feels like: {{b}} °C</p>
+        <p>temp max: {{d}} °C</p>
+        <p>temp min: {{c}} °C</p>
+        <P>pressure: {{e}} hpa</P>
+        <P>Humidity: {{h}}%</P>
+        <P>wind speed:{{g}}km/hr</P>
+
+    </div>
+</div>
+{% endblock %}
